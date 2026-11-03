@@ -1,0 +1,77 @@
+/* Block: lesson-node — round lesson button on the path. Shifted by --offset */
+.lesson-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 150px;
+  transform: translateX(var(--offset, 0));
+}
+
+.lesson-node__button {
+  width: 76px;
+  height: 70px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--unit-color);
+  box-shadow: 0 7px 0 var(--unit-color-dark);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.lesson-node__button:active {
+  transform: translateY(5px);
+  box-shadow: 0 2px 0 var(--unit-color-dark);
+}
+
+.lesson-node__label {
+  color: var(--color-muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.lesson-node__bubble {
+  position: absolute;
+  top: -40px;
+  padding: 5px 10px;
+  border: 2px solid var(--color-line-dark);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--unit-color-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  animation: bob 1.6s ease-in-out infinite;
+}
+
+.lesson-node--done .lesson-node__button {
+  font-size: 34px;
+}
+
+.lesson-node--locked .lesson-node__button {
+  background: #e3dace;
+  box-shadow: 0 7px 0 #c9bca8;
+  filter: grayscale(1);
+  opacity: 0.85;
+}
+
+.lesson-node--current .lesson-node__button {
+  animation: bob 1.6s ease-in-out infinite;
+}
+
+/* Halo around the current lesson */
+.lesson-node--current::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 92px;
+  height: 92px;
+  border: 5px solid var(--unit-color);
+  border-radius: 50%;
+  opacity: 0.35;
+}

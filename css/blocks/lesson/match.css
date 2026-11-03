@@ -1,0 +1,52 @@
+/* Block: match — two columns of pairs */
+.match {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.match__column {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.match__item {
+  min-height: 58px;
+  padding: 14px;
+  border: 2px solid var(--color-line-dark);
+  border-bottom-width: 4px;
+  border-radius: var(--radius-md);
+  background: #fff;
+  font-weight: 700;
+}
+
+.match__item--selected {
+  border-color: var(--color-sky-border);
+  background: var(--color-sky);
+  color: var(--color-blue-dark);
+}
+
+.match__item--matched {
+  border-color: #9fdc97;
+  background: #effbec;
+  color: #8bb985;
+  pointer-events: none;
+}
+
+.match__item--wrong {
+  border-color: var(--color-red);
+  background: var(--color-error-bg);
+  animation: shake 0.4s;
+}
+
+@media (max-width: 760px) {
+  .match {
+    gap: 8px;
+  }
+
+  .match__item {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

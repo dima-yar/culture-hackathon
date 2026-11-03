@@ -1,0 +1,12 @@
+/* Block: alphabet — old letters cheat sheet */
+.alphabet__row {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.alphabet__letter {
+  margin-right: 6px;
+  color: #a3261e;
+  font-family: var(--font-old);
+  font-size: 22px;
+}

@@ -1,0 +1,45 @@
+/* Block: topbar — online counter + stats */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  background: rgba(246, 241, 230, 0.94);
+  backdrop-filter: blur(6px);
+}
+
+.topbar__online {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.topbar__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-green);
+  animation: ping 1.8s infinite;
+}
+
+.topbar__stats {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 760px) {
+  .topbar__online {
+    font-size: 12px;
+  }
+
+  .topbar__count {
+    display: none;
+  }
+}

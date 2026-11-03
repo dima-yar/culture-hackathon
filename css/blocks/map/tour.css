@@ -1,0 +1,36 @@
+/* Block: tour — controls of the history tour */
+.tour {
+  padding: 12px;
+  border: 2px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  background: var(--color-gold-light);
+}
+
+.tour__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.tour__step {
+  color: var(--color-muted);
+  font-weight: 800;
+}
+
+.tour__progress {
+  margin: 8px 0 10px;
+  height: 8px;
+}
+
+.tour__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tour__hint {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-muted);
+}

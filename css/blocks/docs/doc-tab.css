@@ -1,0 +1,35 @@
+/* Block: doc-tabs — row of document tabs */
+.doc-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Block: doc-tab — document selector */
+.doc-tab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 2px solid var(--color-line-dark);
+  border-bottom-width: 4px;
+  border-radius: 16px;
+  background: #fff;
+  text-align: left;
+}
+
+.doc-tab--active {
+  border-color: var(--color-gold);
+  background: var(--color-gold-light);
+}
+
+.doc-tab__icon {
+  font-size: 26px;
+}
+
+.doc-tab__date {
+  display: block;
+  color: var(--color-muted);
+  font-weight: 700;
+}

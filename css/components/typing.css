@@ -1,0 +1,22 @@
+/* Block: typing — "…" indicator while AI "thinks" */
+.typing {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px 6px 4px 0;
+}
+
+.typing__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b8aa95;
+  animation: bounce-dot 1s infinite;
+}
+
+.typing__dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing__dot:nth-child(3) {
+  animation-delay: 0.3s;
+}

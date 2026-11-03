@@ -1,0 +1,11 @@
+#!/bin/sh
+# Rebuilds build/ (the file:// bundle) before every commit, so index.html opened from disk is always up to date.
+# Enabled with: git config core.hooksPath tools/git-hooks
+
+if command -v python >/dev/null 2>&1; then PYTHON=python; else PYTHON=python3; fi
+
+$PYTHON -X utf8 tools/build.py || {
+  echo "pre-commit: tools/build.py failed — commit aborted" >&2
+  exit 1
+}
+git add build

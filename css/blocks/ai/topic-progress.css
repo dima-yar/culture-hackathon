@@ -1,0 +1,16 @@
+/* Block: topic-progress — progress per topic/unit */
+.topic-progress {
+  margin: 12px 0;
+}
+
+.topic-progress__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.topic-progress__errors {
+  color: var(--color-red-dark);
+}

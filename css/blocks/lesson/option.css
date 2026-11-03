@@ -1,0 +1,60 @@
+/* Block: option-list */
+.option-list {
+  display: grid;
+  gap: 12px;
+}
+
+/* Block: option — answer variant */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid var(--color-line-dark);
+  border-bottom-width: 4px;
+  border-radius: 16px;
+  background: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.option:hover {
+  background: #faf6ee;
+}
+
+.option--compact {
+  padding: 10px 12px;
+  font-size: 15px;
+}
+
+.option--selected {
+  border-color: var(--color-sky-border);
+  background: var(--color-sky);
+  color: var(--color-blue-dark);
+}
+
+.option--right {
+  border-color: var(--color-green);
+  background: var(--color-success-bg);
+  color: var(--color-green-dark);
+}
+
+.option--wrong {
+  border-color: var(--color-red);
+  background: var(--color-error-bg);
+  color: var(--color-red-dark);
+}
+
+.option__key {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--color-line-dark);
+  border-radius: 8px;
+  color: var(--color-muted);
+  font-size: 13px;
+}

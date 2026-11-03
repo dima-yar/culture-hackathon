@@ -1,0 +1,17 @@
+/* Block: answer-field — free-text answer */
+.answer-field {
+  width: 100%;
+  min-height: 140px;
+  padding: 14px;
+  border: 2px solid var(--color-line-dark);
+  border-radius: 16px;
+  background: #fff;
+  font: inherit;
+  font-size: 17px;
+  resize: vertical;
+}
+
+.answer-field:focus {
+  outline: none;
+  border-color: var(--color-sky-border);
+}

@@ -1,0 +1,12 @@
+/* Block: tag — tiny label, e.g. "адмін" */
+.tag {
+  display: inline-block;
+  justify-self: start;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #efe9ff;
+  color: var(--color-purple-dark);
+  font-size: 11px;
+  font-weight: 900;
+}

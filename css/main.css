@@ -1,0 +1,112 @@
+/*
+ * Entry stylesheet. Imports follow the cascade order:
+ * base → layout → shared components → feature blocks.
+ * Naming: BEM (block__element--modifier).
+ * Breakpoints: 1180px (aside layouts collapse), 900px (two-column layouts collapse), 760px (mobile).
+ */
+
+/* Base */
+@import url("base/variables.css");
+@import url("base/reset.css");
+@import url("base/animations.css");
+
+/* Layout */
+@import url("layout/app.css");
+@import url("layout/layout.css");
+@import url("layout/view.css");
+
+/* Shared components */
+@import url("components/btn.css");
+@import url("components/link-button.css");
+@import url("components/icon-button.css");
+@import url("components/chip.css");
+@import url("components/card.css");
+@import url("components/text.css");
+@import url("components/tag.css");
+@import url("components/key.css");
+@import url("components/code-badge.css");
+@import url("components/progress.css");
+@import url("components/tabs.css");
+@import url("components/form.css");
+@import url("components/page-head.css");
+@import url("components/modal.css");
+@import url("components/toast.css");
+@import url("components/xp-gain.css");
+@import url("components/typing.css");
+@import url("components/leaderboard.css");
+@import url("components/fact.css");
+
+/* App shell */
+@import url("blocks/shell/nav.css");
+@import url("blocks/shell/topbar.css");
+@import url("blocks/shell/stat.css");
+@import url("blocks/shell/level-bar.css");
+
+/* Learning path */
+@import url("blocks/learn/learn.css");
+@import url("blocks/learn/recommendation.css");
+@import url("blocks/learn/daily-goal.css");
+@import url("blocks/learn/unit.css");
+@import url("blocks/learn/lesson-node.css");
+
+/* Lesson player and exercises */
+@import url("blocks/lesson/lesson.css");
+@import url("blocks/lesson/feedback.css");
+@import url("blocks/lesson/exercise.css");
+@import url("blocks/lesson/option.css");
+@import url("blocks/lesson/meme.css");
+@import url("blocks/lesson/blank.css");
+@import url("blocks/lesson/flashcard.css");
+@import url("blocks/lesson/order-list.css");
+@import url("blocks/lesson/match.css");
+@import url("blocks/lesson/answer-field.css");
+@import url("blocks/lesson/ai-review.css");
+@import url("blocks/lesson/crossword.css");
+@import url("blocks/lesson/result.css");
+
+/* Map */
+@import url("blocks/map/atlas.css");
+@import url("blocks/map/pin.css");
+@import url("blocks/map/year-slider.css");
+@import url("blocks/map/map-layers.css");
+@import url("blocks/map/legend.css");
+@import url("blocks/map/info-card.css");
+@import url("blocks/map/tour.css");
+@import url("blocks/map/history-dialog.css");
+
+/* Documents */
+@import url("blocks/docs/doc-tab.css");
+@import url("blocks/docs/old-text.css");
+@import url("blocks/docs/gloss.css");
+@import url("blocks/docs/translation.css");
+@import url("blocks/docs/alphabet.css");
+@import url("blocks/docs/archive.css");
+
+/* Chronicle (research base) */
+@import url("blocks/chronicle/chronicle.css");
+
+/* AI */
+@import url("blocks/ai/chat.css");
+@import url("blocks/ai/message.css");
+@import url("blocks/ai/figure-card.css");
+@import url("blocks/ai/topic-progress.css");
+@import url("blocks/ai/steps.css");
+
+/* Groups */
+@import url("blocks/groups/group-card.css");
+@import url("blocks/groups/group-head.css");
+@import url("blocks/groups/members.css");
+@import url("blocks/groups/invite.css");
+@import url("blocks/groups/test-card.css");
+@import url("blocks/groups/draft-list.css");
+@import url("blocks/groups/fact-check.css");
+@import url("blocks/groups/competition.css");
+
+/* Friends */
+@import url("blocks/friends/person.css");
+@import url("blocks/friends/feed.css");
+
+/* Profile */
+@import url("blocks/profile/profile-head.css");
+@import url("blocks/profile/stat-tile.css");
+@import url("blocks/profile/achievement.css");

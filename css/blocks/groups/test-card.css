@@ -1,0 +1,17 @@
+/* Block: test-card — test inside a group */
+.test-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+}
+
+.test-card__info {
+  flex: 1;
+}
+
+.test-card__meta {
+  display: block;
+  color: var(--color-muted);
+  font-weight: 700;
+}

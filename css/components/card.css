@@ -1,0 +1,16 @@
+/* Block: card — paper surface */
+.card {
+  padding: 18px;
+  border: 2px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-paper);
+}
+
+.card--flush {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card__title {
+  margin-bottom: 12px;
+}

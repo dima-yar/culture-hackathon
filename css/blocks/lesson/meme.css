@@ -1,0 +1,33 @@
+/* Block: meme — meme card above a question */
+.meme {
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: #1d1a17;
+  color: #fff;
+  font-family: var(--font-meme);
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+.meme__emoji {
+  margin: 14px 0;
+  font-family: sans-serif;
+  font-size: 84px;
+  text-shadow: none;
+}
+
+.meme__caption {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--font-main);
+  font-size: 11px;
+  letter-spacing: 0;
+  text-shadow: none;
+  text-transform: none;
+  opacity: 0.5;
+}

@@ -1,0 +1,45 @@
+/* Block: chat — AI / role-play chat window */
+.chat__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 2px solid var(--color-line);
+}
+
+.chat__avatar {
+  font-size: 34px;
+}
+
+.chat__status {
+  display: block;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 380px;
+  padding: 18px;
+  overflow: auto;
+  background: #fbf7ef;
+}
+
+.chat__suggestions {
+  padding: 12px 18px 0;
+}
+
+.chat__form {
+  display: flex;
+  gap: 10px;
+  padding: 14px 18px;
+}
+
+/* Block: demo-note — disclaimer under AI tools */
+.demo-note {
+  margin-top: 14px;
+  color: var(--color-muted);
+  font-size: 13px;
+}

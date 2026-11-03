@@ -1,0 +1,49 @@
+/* Block: legend — "Хто тримає землю": states present in the chosen year */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 6px;
+}
+
+.legend__title {
+  margin: 8px 6px 8px;
+  color: var(--color-muted);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 2px solid var(--color-line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.legend__item:hover {
+  border-color: var(--color-line-dark);
+}
+
+.legend__item--ukrainian {
+  border-color: #d4a017;
+}
+
+.legend__item--active {
+  background: var(--color-gold-light);
+}
+
+.legend__swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--polity-color);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--polity-color) 45%, #fff);
+  vertical-align: middle;
+}

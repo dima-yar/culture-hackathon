@@ -1,0 +1,16 @@
+/* Block: competition — tournament with a leaderboard */
+.competition__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.competition__info {
+  flex: 1;
+}
+
+.competition__meta {
+  display: block;
+  color: var(--color-muted);
+  font-weight: 700;
+}

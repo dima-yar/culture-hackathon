@@ -1,0 +1,42 @@
+/* Block: leaderboard — ranked list (league, competitions) */
+.leaderboard {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leaderboard__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.leaderboard__item--me {
+  background: var(--color-sky);
+  color: var(--color-blue-dark);
+}
+
+.leaderboard__rank {
+  width: 28px;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.leaderboard__item--top .leaderboard__rank {
+  color: var(--color-green-dark);
+}
+
+.leaderboard__score {
+  margin-left: auto;
+  color: var(--color-muted);
+}
+
+.leaderboard__zone {
+  padding: 4px 10px;
+  color: var(--color-green-dark);
+  font-size: 12px;
+  font-weight: 800;
+}

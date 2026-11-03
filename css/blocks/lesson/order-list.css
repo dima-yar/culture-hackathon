@@ -1,0 +1,56 @@
+/* Block: order-list — chronology answer slots */
+.order-list {
+  display: grid;
+  gap: 8px;
+  min-height: 60px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.order-list__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 2px solid var(--color-sky-border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.order-list__item--placeholder {
+  justify-content: center;
+  border-style: dashed;
+  border-color: var(--color-line-dark);
+  color: var(--color-muted);
+  cursor: default;
+}
+
+.order-list__item--right {
+  border-color: var(--color-green);
+  background: var(--color-success-bg);
+}
+
+.order-list__item--wrong {
+  border-color: var(--color-red);
+  background: var(--color-error-bg);
+}
+
+.order-list__number {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  color: #fff;
+  font-size: 13px;
+}
+
+.order-list__year {
+  margin-left: auto;
+  font-weight: 900;
+}

@@ -1,0 +1,18 @@
+/* Block: draft-list — questions of a test being built */
+.draft-list {
+  display: grid;
+  gap: 8px;
+}
+
+.draft-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 2px solid #f3dc9e;
+  border-radius: var(--radius-sm);
+  background: var(--color-gold-light);
+  font-size: 14px;
+  font-weight: 700;
+}

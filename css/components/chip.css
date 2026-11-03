@@ -1,0 +1,53 @@
+/* Block: chips — wrapping row of chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips--column {
+  flex-direction: column;
+}
+
+/* Block: chip — tappable pill */
+.chip {
+  padding: 10px 14px;
+  border: 2px solid var(--color-line-dark);
+  border-bottom-width: 4px;
+  border-radius: var(--radius-md);
+  background: #fff;
+  font-weight: 700;
+  text-align: left;
+  transition: transform 0.08s;
+}
+
+.chip:active {
+  transform: translateY(2px);
+}
+
+.chip--small {
+  padding: 7px 11px;
+  font-size: 13px;
+}
+
+.chip--used {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.chip--active,
+.chip--seen {
+  border-color: var(--color-sky-border);
+  background: var(--color-sky);
+  color: var(--color-blue-dark);
+}
+
+.chip--current {
+  border-color: var(--color-gold);
+  background: var(--color-gold-light);
+}
+
+.chip__year {
+  margin-right: 4px;
+  color: var(--color-gold-dark);
+}

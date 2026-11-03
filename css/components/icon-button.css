@@ -1,0 +1,15 @@
+/* Block: icon-button — small "✕" style action */
+.icon-button {
+  margin-left: auto;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--color-muted);
+  font-weight: 900;
+}
+
+.icon-button:hover {
+  background: var(--color-error-bg);
+  color: var(--color-red-dark);
+}

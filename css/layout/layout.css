@@ -1,0 +1,53 @@
+/* Block: layout — reusable content grids */
+.layout {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Let columns shrink below their content width instead of overflowing */
+.layout > * {
+  min-width: 0;
+}
+
+/* Two equal columns */
+.layout--split {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Wide main column + narrow column */
+.layout--feature {
+  grid-template-columns: 1.4fr 1fr;
+}
+
+/* Main column + fixed sidebar */
+.layout--aside {
+  grid-template-columns: 1fr 290px;
+}
+
+.layout--stretch {
+  align-items: stretch;
+}
+
+.layout--spaced {
+  margin-top: 16px;
+}
+
+/* Vertical stack */
+.layout--stack {
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 1180px) {
+  .layout--aside {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .layout--split,
+  .layout--feature {
+    grid-template-columns: 1fr;
+  }
+}

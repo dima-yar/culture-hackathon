@@ -1,0 +1,46 @@
+/* Block: old-text — Old Rus' text on parchment */
+.old-text {
+  padding: 24px 26px;
+  border: 2px solid #e2cfa6;
+  border-radius: var(--radius-md);
+  background: radial-gradient(circle at 20% 10%, #fffaf0, #f3e3c2);
+  color: #3b2a17;
+  font-family: var(--font-old);
+  font-size: 27px;
+  line-height: 1.75;
+}
+
+/* Red initial letter */
+.old-text::first-letter {
+  float: left;
+  margin: 4px 8px 0 0;
+  color: #a3261e;
+  font-size: 52px;
+  line-height: 1;
+}
+
+.old-text__word {
+  border-bottom: 2px dotted #b98a3a;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.old-text__word:hover,
+.old-text__word--active {
+  background: #ffe2a0;
+}
+
+/* Block: doc-about — short description above the text */
+.doc-about {
+  margin-bottom: 12px;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .old-text {
+    padding: 18px;
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,52 @@
+/* Block: pin — event marker on the map (SVG <g>), scaled by JS with the zoom */
+.pin {
+  cursor: pointer;
+}
+
+.pin__circle {
+  fill: var(--color-red);
+  stroke: #fff;
+  stroke-width: 3;
+  transition: r 0.15s;
+}
+
+.pin:hover .pin__circle,
+.pin--selected .pin__circle {
+  r: 22;
+}
+
+.pin--seen .pin__circle {
+  fill: var(--color-blue);
+}
+
+.pin--selected .pin__circle {
+  fill: var(--color-gold);
+}
+
+.pin--latest .pin__circle {
+  animation: pulse 1.4s infinite;
+}
+
+.pin__icon {
+  font-size: 17px;
+  text-anchor: middle;
+}
+
+.pin__year {
+  fill: var(--color-ink);
+  font-size: 14px;
+  font-weight: 900;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: #fff8e8;
+  stroke-width: 3;
+}
+
+/* Line from a spread pin to its real place */
+.pin__connector {
+  stroke: var(--color-ink);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+  opacity: 0.5;
+  vector-effect: non-scaling-stroke;
+}

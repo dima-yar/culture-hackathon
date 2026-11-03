@@ -1,0 +1,25 @@
+/* Block: recommendation — "AI рекомендує" card */
+.recommendation {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border-color: #c9d8fb;
+  background: linear-gradient(135deg, #eef3ff, #fff);
+}
+
+.recommendation__icon {
+  font-size: 36px;
+}
+
+.recommendation__label {
+  color: var(--color-blue-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.recommendation__text {
+  margin: 4px 0 12px;
+  font-weight: 700;
+}

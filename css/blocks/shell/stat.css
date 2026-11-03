@@ -1,0 +1,28 @@
+/* Block: stat — streak / XP / HP counter in the top bar */
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: 2px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: var(--color-paper);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.stat--streak .stat__value {
+  color: #f2711c;
+}
+
+.stat--xp .stat__value {
+  color: var(--color-gold-dark);
+}
+
+.stat--hp .stat__value {
+  color: var(--color-red);
+}
+
+.stat--empty {
+  animation: shake 0.5s;
+}

@@ -1,0 +1,59 @@
+/* Block: unit — section of the learning path. Colours come from --unit-color / --unit-color-dark */
+.unit {
+  margin-bottom: 38px;
+}
+
+.unit__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  background: var(--unit-color);
+  box-shadow: 0 5px 0 var(--unit-color-dark);
+  color: #fff;
+}
+
+.unit__label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.unit__title {
+  font-size: 24px;
+}
+
+.unit__learners {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.unit__progress {
+  font-size: 13px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.unit__progress-value {
+  display: block;
+  font-size: 20px;
+}
+
+.unit__path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 44px 0 6px;
+}

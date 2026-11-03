@@ -1,0 +1,31 @@
+/* Block: group-grid — list of groups */
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+/* Block: group-card */
+.group-card {
+  display: grid;
+  gap: 4px;
+  border-bottom-width: 5px;
+  text-align: left;
+}
+
+.group-card:hover {
+  border-color: var(--color-purple);
+}
+
+.group-card__emoji {
+  font-size: 40px;
+}
+
+.group-card__name {
+  font-size: 18px;
+}
+
+.group-card__meta {
+  color: var(--color-muted);
+  font-weight: 700;
+}

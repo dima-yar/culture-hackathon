@@ -1,0 +1,31 @@
+/* Block: modal — centered dialog over a dim backdrop */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(43, 36, 29, 0.45);
+  animation: fade-in 0.2s;
+}
+
+.modal__dialog {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 28px;
+  border-radius: 22px;
+  background: var(--color-paper);
+  text-align: center;
+}
+
+.modal__icon {
+  font-size: 64px;
+}
+
+.modal__text {
+  margin: 0;
+  color: var(--color-muted);
+}

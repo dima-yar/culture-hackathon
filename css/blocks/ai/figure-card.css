@@ -1,0 +1,35 @@
+/* Block: figure-grid — historical figures for role-play */
+.figure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+/* Block: figure-card */
+.figure-card {
+  padding: 18px;
+  border: 2px solid var(--color-line-dark);
+  border-bottom-width: 5px;
+  border-radius: var(--radius);
+  background: #fff;
+  text-align: left;
+}
+
+.figure-card:hover {
+  border-color: var(--color-purple);
+}
+
+.figure-card__icon {
+  font-size: 46px;
+}
+
+.figure-card__name {
+  display: block;
+  margin-top: 6px;
+  font-size: 19px;
+}
+
+.figure-card__desc {
+  color: var(--color-muted);
+  font-weight: 700;
+}

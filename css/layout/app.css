@@ -1,0 +1,28 @@
+/* Block: app — sidebar + main column */
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+.app__main {
+  width: 100%;
+  max-width: 1100px;
+  min-width: 0;
+  padding: 0 32px 60px;
+}
+
+/* Screens that need the whole window (map) */
+.app__main--wide {
+  max-width: 1600px;
+}
+
+@media (max-width: 760px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .app__main {
+    padding: 0 16px 90px;
+  }
+}

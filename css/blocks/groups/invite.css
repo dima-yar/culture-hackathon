@@ -1,0 +1,5 @@
+/* Block: invite — invite a friend into a group */
+.invite {
+  display: flex;
+  gap: 8px;
+}

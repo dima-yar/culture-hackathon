@@ -1,0 +1,20 @@
+/* Block: blank — gap in a fill-in-the-blank sentence */
+.blank {
+  display: inline-block;
+  min-width: 110px;
+  margin: 0 6px;
+  border-bottom: 3px solid var(--color-ink);
+  color: var(--color-blue-dark);
+  text-align: center;
+  cursor: pointer;
+}
+
+.blank--right {
+  border-color: var(--color-green);
+  color: var(--color-green-dark);
+}
+
+.blank--wrong {
+  border-color: var(--color-red);
+  color: var(--color-red-dark);
+}

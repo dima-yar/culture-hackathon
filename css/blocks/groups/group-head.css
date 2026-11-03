@@ -1,0 +1,22 @@
+/* Block: group-head — header of an opened group */
+.group-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 4px 0 16px;
+}
+
+.group-head__emoji {
+  font-size: 48px;
+}
+
+.group-head__info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.group-head__code {
+  margin: 4px 0 0;
+  color: var(--color-muted);
+}

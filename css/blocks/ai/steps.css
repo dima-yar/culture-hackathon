@@ -1,0 +1,31 @@
+/* Block: steps — personal plan */
+.steps {
+  display: grid;
+  gap: 10px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 2px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.steps__icon {
+  font-size: 26px;
+}
+
+.steps__body {
+  flex: 1;
+}
+
+.steps__desc {
+  display: block;
+  color: var(--color-muted);
+}

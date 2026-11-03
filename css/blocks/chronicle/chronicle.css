@@ -1,0 +1,56 @@
+/* Block: chronicle — research base screen */
+.chronicle__epochs,
+.chronicle__categories {
+  margin-bottom: 10px;
+}
+
+.chronicle__search {
+  margin-bottom: 14px;
+}
+
+.chronicle__more {
+  justify-self: center;
+  margin-top: 14px;
+}
+
+/* Block: chronicle-entry — one research record */
+.chronicle-entry {
+  display: grid;
+  gap: 6px;
+}
+
+.chronicle-entry__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.chronicle-entry__date {
+  color: var(--color-gold-dark);
+  font-size: 15px;
+}
+
+.chronicle-entry__id {
+  margin-left: auto;
+  font-size: 11px;
+}
+
+.chronicle-entry__title {
+  font-size: 18px;
+}
+
+.chronicle-entry__text {
+  margin: 0;
+}
+
+.chronicle-entry__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+}

@@ -1,0 +1,34 @@
+/* Block: ai-review — AI feedback on an open answer */
+.ai-review {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 2px solid #d8ccfb;
+  border-radius: 16px;
+  background: var(--color-purple-light);
+}
+
+.ai-review__head {
+  color: var(--color-purple-dark);
+  font-weight: 900;
+}
+
+.ai-review__list {
+  margin: 8px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ai-review__point {
+  padding: 3px 0;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.ai-review__point--hit {
+  color: var(--color-green-dark);
+}
+
+.ai-review__sample {
+  margin: 8px 0 0;
+  font-size: 15px;
+}

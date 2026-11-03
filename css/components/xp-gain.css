@@ -1,0 +1,13 @@
+/* Block: xp-gain — floating "+10 XP" */
+.xp-gain {
+  position: fixed;
+  top: 60px;
+  right: 120px;
+  z-index: 80;
+  color: var(--color-gold-dark);
+  font-size: 22px;
+  font-weight: 900;
+  text-shadow: 0 2px 0 #fff;
+  pointer-events: none;
+  animation: float-up 1.1s ease-out forwards;
+}

@@ -1,0 +1,10 @@
+/* Block: code-badge — group invite code */
+.code-badge {
+  margin: 0 8px;
+  padding: 4px 10px;
+  border: 2px dashed var(--color-gold);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}

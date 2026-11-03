@@ -1,0 +1,40 @@
+/* Block: feedback — result message in the lesson footer */
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.feedback--good {
+  color: var(--color-green-dark);
+}
+
+.feedback--bad {
+  color: var(--color-red-dark);
+}
+
+.feedback__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.feedback__title {
+  font-size: 20px;
+}
+
+.feedback__text {
+  margin: 2px 0 0;
+  font-size: 15px;
+}
+
+.feedback__note {
+  margin: 2px 0 0;
+  font-size: 13px;
+}

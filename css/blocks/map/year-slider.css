@@ -1,0 +1,96 @@
+/* Block: year-slider — timeline under the map: slider, event marks, epoch style marks */
+.year-slider {
+  padding: 12px 6px 4px;
+}
+
+.year-slider__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  margin-bottom: 6px;
+}
+
+.year-slider__year {
+  min-width: 120px;
+  color: var(--color-gold-dark);
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.year-slider__style {
+  font-weight: 800;
+}
+
+.year-slider__info {
+  margin-left: auto;
+  color: var(--color-muted);
+}
+
+.year-slider__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.year-slider__track {
+  position: relative;
+  flex: 1;
+  padding-bottom: 22px;
+}
+
+.year-slider__input {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 8px 0 0;
+  accent-color: var(--color-gold);
+  cursor: pointer;
+}
+
+/* One tick per year that has an event */
+.year-slider__marks {
+  position: absolute;
+  inset: 26px 8px auto;
+  height: 6px;
+}
+
+.year-slider__event-mark {
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  border-radius: 1px;
+  background: var(--color-red);
+  opacity: 0.55;
+}
+
+/* Years where the map style (epoch) changes */
+.year-slider__styles {
+  position: absolute;
+  inset: 34px 8px auto;
+}
+
+.year-slider__style-mark {
+  position: absolute;
+  transform: translateX(-50%);
+  color: var(--color-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.year-slider__style-mark::before {
+  content: "▲";
+  display: block;
+  font-size: 7px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .year-slider__year {
+    font-size: 26px;
+  }
+
+  .year-slider__info {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,19 @@
+/* Block: feed — friends' recent activity */
+.feed {
+  display: grid;
+  gap: 4px;
+}
+
+.feed__item {
+  padding: 8px 4px;
+  border-bottom: 1px dashed var(--color-line);
+}
+
+.feed__item:last-child {
+  border: 0;
+}
+
+.feed__time {
+  margin-left: 6px;
+  color: var(--color-muted);
+}

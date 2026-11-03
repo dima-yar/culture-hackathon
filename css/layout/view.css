@@ -1,0 +1,9 @@
+/* Block: view — one screen of the app, only the active one is shown */
+.view {
+  display: none;
+  animation: fade-in 0.25s ease;
+}
+
+.view--active {
+  display: block;
+}

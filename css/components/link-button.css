@@ -1,0 +1,12 @@
+/* Block: link-button — button that looks like a link */
+.link-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-blue);
+  font-weight: 800;
+}
+
+.link-button--push-right {
+  margin-left: auto;
+}

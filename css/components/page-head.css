@@ -1,0 +1,14 @@
+/* Block: page-head — screen title + description */
+.page-head {
+  margin-bottom: 18px;
+}
+
+.page-head__text {
+  margin: 6px 0 0;
+  color: var(--color-muted);
+}
+
+/* Block: section-title — heading between sections */
+.section-title {
+  margin: 26px 0 12px;
+}

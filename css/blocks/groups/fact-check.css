@@ -1,0 +1,10 @@
+/* Block: fact-check — collapsible fact search in the test builder */
+.fact-check__summary {
+  color: var(--color-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.fact-check__field {
+  margin-top: 10px;
+}

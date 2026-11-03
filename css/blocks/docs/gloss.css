@@ -1,0 +1,14 @@
+/* Block: gloss — translation of the tapped word */
+.gloss {
+  min-height: 48px;
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--color-sky);
+  font-weight: 700;
+}
+
+.gloss__word {
+  font-family: var(--font-old);
+  font-size: 20px;
+}

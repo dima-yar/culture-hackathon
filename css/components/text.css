@@ -1,0 +1,17 @@
+/* Block: text — secondary copy */
+.text--muted {
+  color: var(--color-muted);
+}
+
+.text--small {
+  font-size: 13px;
+}
+
+.text--accent {
+  color: var(--color-gold-dark);
+  font-weight: 900;
+}
+
+.text--flush {
+  margin: 0;
+}

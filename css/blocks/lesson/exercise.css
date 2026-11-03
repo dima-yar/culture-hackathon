@@ -1,0 +1,25 @@
+/* Block: exercise — common parts of every exercise */
+.exercise__kind {
+  margin: 10px 0 8px;
+  color: var(--color-purple);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exercise__question {
+  margin-bottom: 22px;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.exercise__question--fill {
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .exercise__question {
+    font-size: 21px;
+  }
+}

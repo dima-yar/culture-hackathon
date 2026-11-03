@@ -1,0 +1,89 @@
+/* Block: lesson — full-screen lesson player */
+.lesson {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-paper);
+  animation: fade-in 0.2s;
+}
+
+.lesson__top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 24px;
+}
+
+.lesson__close {
+  border: 0;
+  background: none;
+  color: var(--color-muted);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.lesson__hp {
+  color: var(--color-red);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.lesson__hp--hit {
+  animation: shake 0.45s;
+}
+
+.lesson__body {
+  flex: 1;
+  overflow: auto;
+  padding: 10px 20px 30px;
+}
+
+.lesson__content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.lesson__footer {
+  padding: 18px 20px;
+  border-top: 2px solid var(--color-line);
+  transition: background 0.2s;
+}
+
+.lesson__footer--good {
+  border-color: #d9f7cf;
+  background: #d9f7cf;
+}
+
+.lesson__footer--bad {
+  border-color: #ffe0e0;
+  background: #ffe0e0;
+}
+
+.lesson__footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lesson__check {
+  min-width: 180px;
+}
+
+@media (max-width: 760px) {
+  .lesson__footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lesson__check {
+    min-width: 0;
+  }
+}

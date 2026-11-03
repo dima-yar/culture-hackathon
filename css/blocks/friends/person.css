@@ -1,0 +1,52 @@
+/* Block: person-list — list of users */
+.person-list {
+  display: grid;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Block: person — user row (friends, search) */
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border: 2px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.person__avatar {
+  font-size: 30px;
+}
+
+.person__info {
+  flex: 1 1 150px;
+  min-width: 0;
+}
+
+.person__meta {
+  display: block;
+  color: var(--color-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.person__xp {
+  color: var(--color-gold-dark);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .person {
+    flex-wrap: wrap;
+  }
+
+  .person__xp {
+    margin-left: auto;
+  }
+}

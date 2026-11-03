@@ -1,0 +1,41 @@
+/* Design tokens */
+:root {
+  /* Surfaces and text */
+  --color-bg: #f6f1e6;
+  --color-paper: #fffdf8;
+  --color-ink: #2b241d;
+  --color-muted: #7c7064;
+  --color-line: #e7dcc8;
+  --color-line-dark: #d6c8ae;
+  --color-track: #eadfcb;
+
+  /* Accents */
+  --color-sky: #e8f0ff;
+  --color-sky-border: #84aef5;
+  --color-gold: #f0a81c;
+  --color-gold-dark: #c4850a;
+  --color-gold-light: #fff6df;
+  --color-blue: #2e6be6;
+  --color-blue-dark: #1e4fb3;
+  --color-green: #3fb24f;
+  --color-green-dark: #2c8a3a;
+  --color-red: #ea4a4f;
+  --color-red-dark: #b8323a;
+  --color-purple: #7c5ce0;
+  --color-purple-dark: #5a3fb5;
+  --color-purple-light: #f5f1ff;
+
+  /* Answer states */
+  --color-success-bg: #e5f8e2;
+  --color-error-bg: #ffe5e5;
+
+  /* Typography */
+  --font-main: 'Nunito', system-ui, sans-serif;
+  --font-old: 'Old Standard TT', Georgia, serif;
+  --font-meme: Impact, 'Arial Black', sans-serif;
+
+  /* Shape */
+  --radius: 18px;
+  --radius-md: 14px;
+  --radius-sm: 12px;
+}

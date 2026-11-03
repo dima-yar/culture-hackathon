@@ -1,0 +1,20 @@
+/* Block: daily-goal — XP goal of the day */
+.daily-goal__label {
+  color: var(--color-gold-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.daily-goal__value {
+  display: block;
+  margin: 4px 0 8px;
+  font-size: 22px;
+}
+
+.daily-goal__streak {
+  margin: 10px 0 0;
+  color: var(--color-muted);
+  font-size: 14px;
+}

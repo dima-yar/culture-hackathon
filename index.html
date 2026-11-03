@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Літопис — вивчай історію граючи</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Old+Standard+TT:ital@0;1&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="page">
+  <div class="app">
+    <!-- Navigation: sidebar on desktop, bottom bar on mobile -->
+    <nav class="nav" aria-label="Головне меню">
+      <div class="nav__brand">📜 <span class="nav__label">Літопис</span></div>
+      <button class="nav__item nav__item--active" data-view="learn">
+        <span class="nav__icon">🏛️</span><span class="nav__label">Навчання</span>
+      </button>
+      <button class="nav__item" data-view="map">
+        <span class="nav__icon">🗺️</span><span class="nav__label">Карта</span>
+      </button>
+      <button class="nav__item" data-view="docs">
+        <span class="nav__icon">📜</span><span class="nav__label">Документи</span>
+      </button>
+      <button class="nav__item" data-view="chronicle">
+        <span class="nav__icon">📚</span><span class="nav__label">Хроніка</span>
+      </button>
+      <button class="nav__item" data-view="ai">
+        <span class="nav__icon">🤖</span><span class="nav__label">AI-помічник</span>
+      </button>
+      <button class="nav__item" data-view="groups">
+        <span class="nav__icon">👥</span><span class="nav__label">Групи</span>
+      </button>
+      <button class="nav__item" data-view="friends">
+        <span class="nav__icon">🤝</span><span class="nav__label">Друзі</span>
+      </button>
+      <button class="nav__item" data-view="profile">
+        <span class="nav__icon">🏆</span><span class="nav__label">Профіль</span>
+      </button>
+    </nav>
+
+    <main class="app__main">
+      <!-- Top bar: social proof + player stats -->
+      <header class="topbar">
+        <div class="topbar__online">
+          <span class="topbar__dot"></span>
+          <b class="topbar__count" id="online-count">1 284</b>&nbsp;учні вчаться зараз
+        </div>
+        <div class="topbar__stats">
+          <div class="stat stat--streak" title="Серія днів">🔥 <b class="stat__value" id="hud-streak">0</b></div>
+          <div class="stat stat--xp" title="Досвід">⭐ <b class="stat__value" id="hud-xp">0</b> XP</div>
+          <button class="stat stat--hp" id="hud-hp-button" title="HitPoints — життя за помилки">
+            ❤️ <b class="stat__value" id="hud-hp">5</b>
+          </button>
+        </div>
+      </header>
+
+      <div class="level-bar">
+        <span class="level-bar__badge">Рівень <b id="hud-level">1</b></span>
+        <span class="level-bar__title" id="hud-level-title"></span>
+        <div class="progress"><i class="progress__fill progress__fill--gold" id="hud-level-fill"></i></div>
+        <small class="level-bar__hint" id="hud-level-hint"></small>
+      </div>
+
+      <!-- Screens: rendered by js/views/*.js -->
+      <section class="view view--active" id="view-learn"></section>
+      <section class="view" id="view-map"></section>
+      <section class="view" id="view-docs"></section>
+      <section class="view" id="view-chronicle"></section>
+      <section class="view" id="view-ai"></section>
+      <section class="view" id="view-groups"></section>
+      <section class="view" id="view-friends"></section>
+      <section class="view" id="view-profile"></section>
+    </main>
+  </div>
+
+  <!-- Lesson player (js/lesson/player.js) -->
+  <div class="lesson" id="lesson" hidden>
+    <div class="lesson__top">
+      <button class="lesson__close" id="lesson-close" title="Вийти (Esc)">✕</button>
+      <div class="progress progress--large">
+        <i class="progress__fill progress__fill--solid" id="lesson-progress"></i>
+      </div>
+      <div class="lesson__hp" id="lesson-hp-box">❤️ <b id="lesson-hp">5</b></div>
+    </div>
+    <div class="lesson__body" id="lesson-scroll">
+      <div class="lesson__content" id="lesson-content"></div>
+    </div>
+    <footer class="lesson__footer" id="lesson-footer">
+      <div class="lesson__footer-inner">
+        <div class="feedback" id="lesson-feedback"></div>
+        <button class="btn btn--green lesson__check" id="lesson-check" disabled>Перевірити</button>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal" id="modal" hidden></div>
+  <div class="toast-stack" id="toast-stack"></div>
+
+  <!--
+    Opened straight from disk (file://) browsers block ES modules, so the bundle built by tools/build.py is used.
+    Over http(s) the original modules from js/ are loaded, so edits show up without rebuilding.
+  -->
+  <script>
+    (function () {
+      var script = document.createElement('script');
+      if (location.protocol === 'file:') {
+        script.src = 'build/app.js';
+      } else {
+        script.type = 'module';
+        script.src = 'js/main.js';
+      }
+      document.body.appendChild(script);
+    })();
+  </script>
+</body>
+</html>

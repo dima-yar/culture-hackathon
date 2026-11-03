@@ -1,0 +1,24 @@
+/* Block: members — group member list */
+.members {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.members__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+}
+
+.members__avatar {
+  font-size: 22px;
+}
+
+.members__name {
+  font-size: 14px;
+  font-weight: 800;
+}

@@ -1,0 +1,124 @@
+/* Block: info-panel — details of the selection; mixed with .atlas__panel inside the map */
+.info-panel {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+/* Block: info-card — event, city or state details */
+.info-card__kicker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-gold-dark);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.info-card__title {
+  margin: 6px 0 4px;
+  font-size: 22px;
+}
+
+.info-card__place,
+.info-card__holder {
+  margin: 4px 0;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.info-card__badge {
+  margin: 4px 0;
+  color: var(--color-blue-dark);
+  font-weight: 800;
+}
+
+.info-card__subtitle {
+  margin: 14px 0 0;
+  color: var(--color-muted);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.info-card__cta {
+  margin: 8px 0 4px;
+}
+
+.info-card__hints {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-card__fidelity {
+  display: inline-block;
+  margin: 6px 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.info-card__fidelity--historical {
+  background: var(--color-success-bg);
+  color: var(--color-green-dark);
+}
+
+.info-card__fidelity--plausible {
+  background: var(--color-gold-light);
+  color: var(--color-gold-dark);
+}
+
+.info-card__sources {
+  margin: 6px 0 10px;
+  font-size: 13px;
+}
+
+.info-card__sources summary {
+  color: var(--color-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.info-card__source-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: var(--color-muted);
+}
+
+/* Block: lore — facts about a city */
+.lore {
+  display: grid;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lore__item {
+  padding: 10px 12px;
+  border-left: 4px solid var(--color-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: #fff9ea;
+}
+
+.lore__meta {
+  display: block;
+  color: var(--color-muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.lore__title {
+  display: block;
+  font-size: 15px;
+}
+
+.lore__text {
+  margin: 4px 0 0;
+  font-size: 14px;
+}

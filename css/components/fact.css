@@ -1,0 +1,30 @@
+/* Block: fact-list — search results */
+.fact-list {
+  display: grid;
+  gap: 10px;
+  max-height: 420px;
+  margin-top: 12px;
+  overflow: auto;
+}
+
+/* Block: fact — verified fact card */
+.fact {
+  padding: 12px;
+  border: 2px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+
+.fact__title {
+  display: block;
+}
+
+.fact__text {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.fact__source {
+  color: var(--color-green-dark);
+  font-weight: 800;
+}

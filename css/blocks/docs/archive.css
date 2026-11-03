@@ -1,0 +1,50 @@
+/* Block: archive — grid of source quotes imported from Okraina */
+.archive {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+/* Block: archive-item */
+.archive-item {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.archive-item__meta {
+  color: var(--color-gold-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+}
+
+.archive-item__title {
+  font-size: 17px;
+}
+
+.archive-item__original {
+  margin: 0;
+  padding: 12px 14px;
+  border-left: 4px solid #a3261e;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: radial-gradient(circle at 20% 10%, #fffaf0, #f3e3c2);
+  color: #3b2a17;
+  font-family: var(--font-old);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.archive-item__details summary {
+  color: var(--color-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.archive-item__translation {
+  margin: 6px 0 0;
+}
+
+.archive-item__source {
+  color: var(--color-muted);
+}
